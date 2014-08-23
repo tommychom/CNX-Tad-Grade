@@ -13,7 +13,7 @@
 				<input type="text" name="score" class="form-control">
 				<button class="btn btn-primary">Calculate</button>
 			</div>
-			<p><?php echo $score = (!empty($_POST['score'])) ? 'Grade : ' . $grade->tad($_POST['score']) : ''; ?></p>
+		 	<p><strong><?php echo $score = (!empty($_POST['score'])) ? 'Grade : ' . $grade->tad($_POST['score']) : ''; ?></strong></p>
 		</form>
 	</div>
 </body>
