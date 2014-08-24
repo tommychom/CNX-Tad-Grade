@@ -1,17 +1,18 @@
 <?php
 class Grade {
-
 	public function tad($score) {
+		$grade = '';
 		if ($score < 50) {
-			return 'F';
+			$grade = 'F';
 		} elseif ($score < 60) {
-			return 'D';
+			$grade = 'D';
 		} elseif ($score < 70) {
-			return 'C';
+			$grade = 'C';
 		} elseif ($score < 80) {
-			return 'B';
-		} elseif ($score >= 80) {
-			return 'A';
+			$grade = 'B';
+		} else {
+			$grade = 'A';
 		}
+		return $grade;
 	}
 }
