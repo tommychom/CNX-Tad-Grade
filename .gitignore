@@ -1,3 +1,9 @@
 vendor/
 composer.lock
-result/
+results/
+*.swp
+google.txt
+*.png
+report.html
+output.xml
+log.html
