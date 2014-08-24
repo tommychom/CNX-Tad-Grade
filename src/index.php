@@ -10,8 +10,8 @@
 	<div class="container">
 		<form name="form1" method="post" action="index.php" class="form-inline">
 			<div class="form-group">
-				<input type="text" name="score" class="form-control">
-				<button class="btn btn-primary">Calculate</button>
+				<input id="score" type="text" name="score" class="form-control">
+				<button id="calculate" class="btn btn-primary">Calculate</button>
 			</div>
 		 	<p><strong><?php echo $score = (!empty($_POST['score'])) ? 'Grade : ' . $grade->tad($_POST['score']) : ''; ?></strong></p>
 		</form>
