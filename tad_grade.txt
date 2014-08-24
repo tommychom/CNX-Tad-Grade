@@ -1,0 +1,37 @@
+# -*- coding: robot -*-
+
+*** Settings ***
+Library    Selenium2Library
+Suite Setup    Open Browser    http://stark-island-2282.herokuapp.com/src/
+Suite Teardown    Close All Browsers
+Test Setup    Go To    http://stark-island-2282.herokuapp.com/src/
+
+*** Variables ***
+
+*** Testcases ***
+TestGradeA
+    Input Text    score   100 
+    Click Button    calculate
+    Wait Until Page Contains    Grade : A
+
+TestGradeB
+    Input Text    score   79 
+    Click Button    calculate
+    Wait Until Page Contains    Grade : A
+
+TestGradeC
+    Input Text    score   69 
+    Click Button    calculate
+    Wait Until Page Contains    Grade : C
+
+TestGradeD
+    Input Text    score   59 
+    Click Button    calculate
+    Wait Until Page Contains    Grade : D
+
+TestGradeF
+    Input Text    score   49 
+    Click Button    calculate
+    Wait Until Page Contains    Grade : F
+
+*** Keywords ***
