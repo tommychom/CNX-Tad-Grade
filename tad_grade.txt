@@ -17,7 +17,7 @@ TestGradeA
 TestGradeB
     Input Text    score   79 
     Click Button    calculate
-    Wait Until Page Contains    Grade : A
+    Wait Until Page Contains    Grade : B
 
 TestGradeC
     Input Text    score   69 
